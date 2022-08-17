@@ -1,0 +1,65 @@
+.regform{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #131324;
+    gap: 1rem;
+    color: white;
+}
+.regform>h1{
+    text-transform: uppercase;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000076;
+    gap: 1rem;
+    color: white;
+    padding: 3rem 5rem;
+    border-radius: 10px;
+}
+.forms > input{
+    background-color: transparent;
+    padding: 1rem;
+    border: 0.1rem solid #7865ff;
+    border-radius: 0.4rem;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+   
+}
+.forms > input :focus{
+    border: 0.1rem solid #997af0;
+    outline: none;
+}
+.reg_btn{
+    background-color: #7865ff;
+    color: white;
+    padding: 1rem 2rem ;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+.reg_btn:hover{
+    background-color: #997af0 ;
+
+}
+.forms >span{
+    text-transform: uppercase;
+
+}
+.forms >span>a{
+    color: #4e0eff;
+    text-decoration: none;
+    font-weight: bold;
+}
