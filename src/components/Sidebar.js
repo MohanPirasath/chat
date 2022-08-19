@@ -51,7 +51,7 @@ function joinRoom(room, isPublic = true) {
 }
 
 function getRooms() {
-  fetch("http://localhost:5000/rooms")
+  fetch("https://chatme-app-project4.herokuapp.com/rooms")
       .then((res) => res.json())
       .then((data) => setRooms(data));
 }
