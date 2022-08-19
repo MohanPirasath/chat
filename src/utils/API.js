@@ -14,7 +14,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 const APIs = createApi({
     reducerPath: "APIs",
     baseQuery: fetchBaseQuery({
-        baseUrl: "http://localhost:5000",
+        baseUrl: "https://chatme-app-project4.herokuapp.com",
     }),
 
     endpoints: (builder) => ({
