@@ -1,6 +1,7 @@
 
 
 // export const APIs = "http://localhost:5000";
+// /* /index.html 200
 
 // export const registerRoute = `${APIs}/api/auth/register`
 // export const loginrRoute = `${APIs}/api/auth/login`

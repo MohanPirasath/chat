@@ -46,7 +46,9 @@ function joinRoom(room, isPublic = true) {
   // dispatch for notifications
   dispatch(resetNotifications(room));
   socket.off("notification").on("notification",(room)=>{
+    // if (currentRoom != room)
     dispatch(addNotifications(room))
+  
   })
 }
 
