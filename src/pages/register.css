@@ -8,9 +8,55 @@
     background-color: #131324;
     gap: 1rem;
     color: white;
+    overflow: scroll;
 }
 .regform>h1{
     text-transform: uppercase;
+}
+
+.signup-profile-pic-container{
+width: 100px;
+height: 100px;
+margin: 0 auto;
+position: relative;
+}
+.signup-profile-pic{
+width: 90px;
+border-radius: 50%;
+border: 2px solid gray;
+object-fit: cover;
+height: 90px;
+/* margin: 0 auto;
+position: relative; */
+}
+
+/* .image-uploaded{
+
+
+} */
+
+.add-pic-icon{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: green;
+    background: white;
+    cursor: pointer;
+    z-index: 99;
+    border-radius: 50%;
+}
+.add-pic-icon_btn{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    color: transparent;
+    background: transparent;
+    cursor: pointer;
+    z-index: 99;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+
 }
 
 .forms{
@@ -23,7 +69,12 @@
     color: white;
     padding: 3rem 5rem;
     border-radius: 10px;
+    /* height: 50%; */
 }
+
+
+
+
 .forms > input{
     background-color: transparent;
     padding: 1rem;
@@ -63,3 +114,10 @@
     text-decoration: none;
     font-weight: bold;
 }
+
+/* @media screen and (min-width:720px) and (max-width:1080){
+    .regform{
+
+        width: 100vw;
+    }
+} */
