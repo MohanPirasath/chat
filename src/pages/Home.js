@@ -10,7 +10,7 @@ import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
 function Home() {
   return (
    <Row>
-    <Col md={6} className="col1">
+    <Col  className="col1 home_bg">
    <div> <h1>Make a conversation with your friends </h1>
     <p>ChatMe will connect you with your friends</p>
     <LinkContainer to="/chat">
@@ -19,8 +19,8 @@ function Home() {
     </div>
 
     </Col>
-    <Col md={6} className="home_bg">
-    </Col>
+    {/* <Col md={6} className="home_bg">
+    </Col> */}
    </Row>
   )
 }

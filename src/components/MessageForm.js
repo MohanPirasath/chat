@@ -55,9 +55,9 @@ function MessageForm() {
           ? messages.map(({ _id: date, messagesByDate }, index) => {
               return (
                 <div key={index}>
-                  <p className="alert alert-info text-center message-date-indicator">
-                    {/* {date} */}
-                  </p>
+                  {/* <p className="alert alert-info text-center message-date-indicator">
+                    {date}
+                  </p> */}
 
                   {messagesByDate?.map(
                     ({ content, time, from: sender }, index) => {
