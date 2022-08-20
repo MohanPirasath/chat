@@ -7,6 +7,9 @@ import { AppContext } from "../context/appContext";
 
 function MessageForm() {
   const [message, setMessage] = useState("");
+  useEffect(()=>{
+    scrollToBottom()
+  },[messages])
   const { socket, currentRoom, setMessages, messages, privateMemberMsg } =
     useContext(AppContext);
   const messageEndRef = useRef(null);
@@ -40,7 +43,9 @@ function MessageForm() {
     console.log("roomMes", roomMes);
     setMessages(roomMes);
   });
-
+  function scrollToBottom() {
+    messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
+}
   const user = useSelector((state) => state.user);
   return (
     <>
@@ -51,13 +56,13 @@ function MessageForm() {
               return (
                 <div key={index}>
                   <p className="alert alert-info text-center message-date-indicator">
-                    {date}
+                    {/* {date} */}
                   </p>
 
                   {messagesByDate?.map(
                     ({ content, time, from: sender }, index) => {
                       return (
-                        <div className="message" key={index}>
+                        <div className={sender?.email == user?.email ? "message" : "incoming-message"} key={index}>
                           <div className="message-inner">
                             <div className="d-flex align-items-center mb-3">
                               <img
@@ -75,7 +80,7 @@ function MessageForm() {
                               </p>
                             </div>
                             <p className="message-content">{content}</p>
-                            <p className="message-timestamp-left">{time}</p>
+                            <p className="message-timestamp-left">{date} {time}</p>
                           </div>
                         </div>
                       );
@@ -85,6 +90,7 @@ function MessageForm() {
               );
             })
           : ""}
+          <div ref={messageEndRef}></div>
       </div>
       <Form onSubmit={handlesubmit}>
         <Row>

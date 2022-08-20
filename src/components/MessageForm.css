@@ -6,3 +6,34 @@
     overflow-y: scroll;
     margin-bottom: 20px;
 }
+
+.message-inner{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 200px;
+    max-width: 90%;
+    text-align: left;
+    min-height: 80px;
+    display: inline-block;
+    background-color: lightgray;
+}
+
+.incoming-message .message-inner{
+    background-color: lightgreen;
+}
+
+.incoming-message{
+display: flex;
+justify-content: flex-end;
+margin-right: 20px;
+}
+
+.message-sender{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.message-timestamp-left{
+    font-size: 0.8rem;
+}
