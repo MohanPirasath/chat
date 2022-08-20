@@ -5,6 +5,7 @@
     border: 1px solid lightblue;
     overflow-y: scroll;
     margin-bottom: 20px;
+    background-color: black;
 }
 
 .message-inner{
@@ -32,8 +33,16 @@ margin-right: 20px;
 .message-sender{
     margin-bottom: 5px;
     font-weight: bold;
+    color: #7865ff;
 }
 
 .message-timestamp-left{
     font-size: 0.8rem;
+    color: #7865ff;
+
+}
+
+.message-content{
+    color: #7865ff;
+    
 }
